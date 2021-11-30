@@ -9,10 +9,10 @@ stringify :: [Int] -> String
 stringify = unwords . map show
 
 findMax :: [Int] -> [Int]
-findMax l = [1 + indice, highestNumber]
+findMax l = [1 + index, highestNumber]
   where
     highestNumber = maximum l
-    Just indice = elemIndex highestNumber l
+    Just index = elemIndex highestNumber l
 
 countResults :: String -> Int
 countResults = sum . map read . words
