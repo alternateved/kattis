@@ -7,7 +7,7 @@ parseCase :: String -> [Int]
 parseCase = map read . words
 
 run :: String -> String
-run = show . map (calculateCase . parseCase) . tail . lines
+run = unlines . map (show . calculateCase . parseCase) . tail . lines
 
 main :: IO ()
 main = interact run
