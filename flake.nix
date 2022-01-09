@@ -1,5 +1,5 @@
 {
-  description = "Advent Of Code 2021";
+  description = "Kattis, kattis flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
